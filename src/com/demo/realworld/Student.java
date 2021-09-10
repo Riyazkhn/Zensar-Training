@@ -1,25 +1,32 @@
 package com.demo.realworld;
 
 public class Student {
-	public int rollno;
+	public long rollno;
 	protected int addmissionNo;
 	int age;
-	private int courseid;
-	public void doPublic()
+	private String courseid;
+	public void doPublic(int r)
 	{
-		
+		  rollno=r;
+		  System.out.println("Roll no: "+r);
 	}
-	void doDefault()
+	void doDefault(int a)
 	{
-		
+		age=a;
+		System.out.println("Age is: "+age);
 	}
-	protected void doProtected()
+	protected void doProtected(int a)
 	{
-		
+		addmissionNo=a;
+		System.out.println("Admission number is:"+addmissionNo);
 	}
-	private void doPrivate()
+	public void  setCourseid(String c)
 	{
-		
+		courseid=c;
+	}
+	public String getCourseid()
+	{
+		return courseid;
 	}
 	
 }
