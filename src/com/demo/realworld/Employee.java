@@ -1,31 +1,40 @@
 package com.demo.realworld;
 
 public class Employee {
-	private int salary, id;
+	private int id,salary;
 	private String name;
-
-	public void setId(int x) {
-		id = x;
+	
+	public void setid(int id)
+	{
+		 this.id=id;
 	}
-
-	public int getId() {
+	public int getid()
+	{
 		return id;
 	}
-
-	public void setSalary(int x) {
-		salary = x;
+	public void setsalary(int salary)
+	{
+		 this.salary=salary;
 	}
-
-	public int getSalary() {
+	public int getSalary()
+	{
 		return salary;
 	}
-
-	public void setName(String x) {
-		name = x;
+	public void setid(String name)
+	{
+		 this.name=name;
 	}
-
-	public String getName() {
+	public String  getName()
+	{
 		return name;
 	}
-
+	public static void main(String[] args) {
+		Employee o =new Employee();
+		o.setid(5);
+		o.setsalary(5000);
+		o.setid("Sohil");
+		System.out.println(o.getid());
+		System.out.println(o.getSalary());
+		System.out.println(o.getName());
+	}
 }
